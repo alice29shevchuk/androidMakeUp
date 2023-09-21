@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cardImageView"
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:src="@drawable/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cvvEditText"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="-299dp"
+        android:layout_marginTop="400dp"
+        android:foregroundTint="#131313"
+        android:hint="CVV"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/cardImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cvvEditText2"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="410dp"
+        android:foregroundTint="#131313"
+        android:hint="MM"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/cardImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cvvEditText3"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="-299dp"
+        android:foregroundTint="#131313"
+        android:hint="YY"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/cardImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/numberEditText"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-250dp"
+        android:layout_marginTop="-250dp"
+        android:hint="Number"
+        android:inputType="number"
+        android:maxLength="19"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/cardImageView"
+        app:layout_constraintTop_toBottomOf="@+id/cardImageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="-260dp"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/cardImageView"
+        app:layout_constraintTop_toBottomOf="@+id/numberEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

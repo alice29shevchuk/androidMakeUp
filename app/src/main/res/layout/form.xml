@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/user"
+        android:background="@drawable/circle_background"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="User Icon"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Username"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/clearUsernameButton"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="312dp"
+            android:layout_marginTop="-51dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:visibility="visible"
+            android:onClick="clearField"
+            app:layout_constraintEnd_toEndOf="@id/emailInputLayout"
+            app:layout_constraintTop_toTopOf="@id/emailInputLayout"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@id/usernameInputLayout">
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/clearPassButton"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="312dp"
+            android:layout_marginTop="-51dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:visibility="visible"
+            android:onClick="clearField"
+            app:layout_constraintEnd_toEndOf="@id/emailInputLayout"
+            app:layout_constraintTop_toTopOf="@id/emailInputLayout"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPasswordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm password"
+            app:layout_constraintTop_toBottomOf="@id/passwordInputLayout">
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/clearConfirmButton"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="312dp"
+            android:layout_marginTop="-51dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:visibility="visible"
+            android:onClick="clearField"
+            app:layout_constraintEnd_toEndOf="@id/emailInputLayout"
+            app:layout_constraintTop_toTopOf="@id/emailInputLayout"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            app:layout_constraintTop_toBottomOf="@id/passwordInputLayout">
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/clearEmailButton"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="312dp"
+            android:layout_marginTop="-51dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:visibility="visible"
+            android:onClick="clearField"
+            app:layout_constraintEnd_toEndOf="@id/emailInputLayout"
+            app:layout_constraintTop_toTopOf="@id/emailInputLayout"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Phone"
+            app:layout_constraintTop_toBottomOf="@id/passwordInputLayout">
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/clearPhoneButton"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="312dp"
+            android:layout_marginTop="-51dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:visibility="visible"
+            android:onClick="clearField"
+            app:layout_constraintEnd_toEndOf="@id/emailInputLayout"
+            app:layout_constraintTop_toTopOf="@id/emailInputLayout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Choose date of your bithday"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthDateInputLayout"
+            android:layout_width="770dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:hint="Birth Date"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/emailInputLayout">
+            <DatePicker
+                android:id="@+id/birthDatePicker"
+                android:layout_width="780dp"
+                android:layout_height="match_parent"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        app:layout_constraintTop_toBottomOf="@id/emailInputLayout"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
